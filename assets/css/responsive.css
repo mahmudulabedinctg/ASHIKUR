@@ -1,0 +1,123 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --third-family: "Potta One", sans-serif;
+    --primary-color: #F8BC17;
+    --outline-color: #353535;
+}
+
+/* Navbar */
+
+@media (min-width: 320px) and (max-width: 991px) {
+    #navbarSupportedContent {
+        text-align: center;
+        padding: 18px 0 2px;
+    }
+
+    .navbar .nav-link:hover {
+        border-top: 1px solid #353535;
+        border-bottom: 1px solid #353535;
+        padding: 0 25px;
+    }
+
+    .navbar .nav-item:last-child .nav-link {
+        padding: 0 25px;
+        margin: 0 18px;
+    }
+}
+
+/* Navbar */
+
+/* Home Section */
+
+@media (max-width: 991px) {
+    .home {
+        margin-top: 120px;
+        margin-bottom: 78px;
+    }
+
+    .home .banner-img {
+        margin-top: 50px;
+    }
+
+    .home .banner-social {
+        p {
+            margin-left: auto;
+        }
+
+        a:last-child {
+            margin-right: auto;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    .home .banner-text {
+        h3 {
+            font-size: 16px;
+
+            img {
+                width: 16px;
+            }
+        }
+
+        h1 {
+            font-size: 34px;
+            margin-top: 8px;
+            margin-bottom: 14px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 190%;
+            margin-bottom: 22px;
+        }
+    }
+
+    .home .banner-btn {
+        gap: 12px;
+    }
+
+    .btn {
+        font-weight: 600;
+        font-size: 10px;
+
+        i {
+            width: 12px;
+            height: 12px;
+            margin-left: 5.5px;
+        }
+    }
+
+    .btn--primary {
+        border-radius: 10px;
+        padding: 8px 20px;
+    }
+
+    .btn--outline {
+        border-radius: 10px;
+        padding: 8px 7px;
+    }
+
+    .home .banner-social {
+        margin-top: 46px;
+        font-size: 16px;
+
+        p {
+            margin-bottom: 0;
+            margin-right: 0;
+        }
+
+        a img {
+            width: 32px;
+        }
+    }
+}
+
+/* Home Section */
+
+/* About Section */
+
+
+/* About Section */

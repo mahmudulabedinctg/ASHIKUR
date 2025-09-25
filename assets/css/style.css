@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&display=swap');
+
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --third-family: "Potta One", sans-serif;
+    --primary-color: #F8BC17;
+    --outline-color: #353535;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    a {
+        text-decoration: none;
+    }
+
+    ul,
+    ol {
+        list-style: none;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+/* Common CSS */
+
+.btn {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    text-align: center;
+
+    i {
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        margin-left: 11px;
+    }
+}
+
+.btn--primary {
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 45px;
+}
+
+.btn--primary:hover {
+    background-color: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn--outline {
+    border-radius: 20px;
+    border: 1px solid var(--outline-color);
+    color: var(--outline-color);
+    padding: 15px 18px;
+}
+
+.btn--outline:hover {
+    background-color: var(--outline-color);
+    border: none;
+    color: #fff;
+}
+
+/* Common CSS */
+
+/* Navbar */
+
+.navbar {
+    padding: 16px 0;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navbar .nav-link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: #353535;
+    text-transform: uppercase;
+    padding: 0 30px;
+    margin: 0 18px;
+}
+
+.navbar .nav-link:hover {
+    border-bottom: 1px solid #353535;
+    padding: 0 25px;
+}
+
+.navbar .nav-item:last-child .nav-link {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.navbar .nav-item:last-child .nav-link:hover {
+    padding-right: 25px;
+}
+
+.navbar button,
+.navbar button:hover,
+.navbar button:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+/* Navbar */
+
+/* Home Section */
+
+.home {
+    margin-top: 140px;
+    margin-bottom: 155px;
+}
+
+.home .banner-text {
+    h3 {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 24px;
+        color: #353535;
+    }
+
+    h1 {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 64px;
+        color: #353535;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 180%;
+        color: #353535;
+        margin-bottom: 43px;
+    }
+}
+
+.home .banner-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.home .banner-social {
+    gap: 16px;
+    margin-top: 63px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 180%;
+    color: #353535;
+
+    p {
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+}
+
+/* Home Section */
+
+/* About Section */
+
+.about {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 556px;
+    margin-top: 155px;
+    margin-bottom: 150px;
+}
+
+.about .banner-text {
+    padding-top: 68px;
+    padding-bottom: 86px;
+    h1 {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 50px;
+        color: #353535;
+    }
+
+    p {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 190%;
+        color: #353535;
+        margin-top: 26px;
+        margin-bottom: 62px;
+    }
+}
+
+/* About Section */
