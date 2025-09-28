@@ -31,16 +31,16 @@
 /* Home Section */
 
 @media (max-width: 991px) {
-    .home {
+    #home {
         margin-top: 120px;
         margin-bottom: 78px;
     }
 
-    .home .banner-img {
+    #home .banner-img {
         margin-top: 50px;
     }
 
-    .home .banner-social {
+    #home .banner-social {
         p {
             margin-left: auto;
         }
@@ -52,7 +52,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 620px) {
-    .home .banner-text {
+    #home .banner-text {
         h3 {
             font-size: 16px;
 
@@ -75,7 +75,7 @@
         }
     }
 
-    .home .banner-btn {
+    #home .banner-btn {
         gap: 12px;
     }
 
@@ -100,7 +100,7 @@
         padding: 8px 7px;
     }
 
-    .home .banner-social {
+    #home .banner-social {
         margin-top: 46px;
         font-size: 16px;
 
@@ -119,5 +119,251 @@
 
 /* About Section */
 
+@media (max-width: 991px) {
+    #about {
+        margin-top: 80px;
+        margin-bottom: 75px;
+    }
+
+    #about .Ellipse {
+        top: 0;
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+    #about .banner-text {
+        padding-top: 43px;
+        padding-bottom: 0;
+    }
+
+    #about .banner-img img {
+        transform: scaleX(-1);
+        margin-top: -50px;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    #about .Ellipse {
+        width: 87px;
+    }
+
+    #about .banner-text {
+        h1 {
+            font-family: var(--second-family);
+            font-weight: 700;
+            font-size: 24px;
+            color: #353535;
+        }
+
+        p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 171%;
+            color: #4d4d4d;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+    }
+
+    #about .banner-img {
+        img {
+            width: 315px;
+        }
+    }
+}
 
 /* About Section */
+
+/* Idea Section */
+
+@media (max-width: 991px) {
+    #idea {
+        margin-top: 75px;
+        margin-bottom: 85px;
+    }
+
+    #idea .row {
+        gap: 16px;
+    }
+
+    #idea .card {
+        width: auto;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #idea .card img {
+        margin: 0;
+    }
+
+    #idea .card-body {
+        text-align: justify;
+    }
+
+    #idea .card-body h4 {
+        margin: 0 0 7px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    #idea .card {
+        width: calc(100% - 30px);
+        padding: 26px 30px 39px 26px;
+    }
+
+    #idea .card img {
+        width: 43px;
+    }
+
+    #idea .card-body h4 {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 180%;
+        color: #353535;
+    }
+
+    #idea .card-body p {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 174%;
+        color: #7a7a7a;
+    }
+}
+
+/* Idea Section */
+
+/* Branding Section */
+
+@media (max-width: 991px) {
+    #branding {
+        margin: 85px auto;
+    }
+
+    #branding .row {
+        margin: 0 auto;
+    }
+
+    #branding .Ellipse {
+        right: 20px;
+    }
+
+    #branding .banner-img img {
+        margin: 0 auto;
+    }
+
+    #branding .banner-text {
+        padding: 27px 31px 0 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    #branding .banner-text {
+        h1 {
+            font-family: var(--second-family);
+            font-weight: 700;
+            font-size: 24px;
+            color: #353535;
+        }
+
+        p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 180%;
+            color: #353535;
+            margin: 17px 0 23px;
+        }
+    }
+}
+
+/* Branding Section */
+
+/* Help Section */
+
+@media (max-width: 991px) {
+    #help {
+        margin: 76px auto 96px;
+    }
+
+    #help .row {
+        justify-content: flex-start;
+        gap: 38px;
+    }
+
+    #help .box {
+        gap: 23px;
+    }
+
+    #help .sub-box {
+        gap: 17px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #help .col-lg-6 {
+        text-align: left;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    #help .count {
+        gap: 26px;
+        display: flex !important;
+
+        .project {
+            margin-left: auto;
+        }
+
+        .client {
+            margin-right: auto;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    #help .sub-box {
+        padding: 16px 18px;
+
+        img {
+            width: 50px;
+        }
+
+        h4 {
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    #help .heading {
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 180%;
+            margin: 24px 0;
+        }
+    }
+
+    #help .count {
+        h3 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+}
+
+/* Help Section */
