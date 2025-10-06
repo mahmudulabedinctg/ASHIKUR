@@ -11,7 +11,13 @@
 @media (min-width: 320px) and (max-width: 991px) {
     #navbarSupportedContent {
         text-align: center;
-        padding: 18px 0 2px;
+        margin: 18px 0 2px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-item {
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .navbar .nav-link:hover {
@@ -40,7 +46,7 @@
         margin-top: 50px;
     }
 
-    #home .banner-social {
+    .banner-social {
         p {
             margin-left: auto;
         }
@@ -100,7 +106,7 @@
         padding: 8px 7px;
     }
 
-    #home .banner-social {
+    .banner-social {
         margin-top: 46px;
         font-size: 16px;
 
@@ -184,11 +190,14 @@
         margin-bottom: 85px;
     }
 
+    #service .row,
     #idea .row {
         gap: 16px;
     }
 
-    #idea .card {
+    /* card */
+
+    .card {
         width: auto;
         flex-direction: row;
         gap: 16px;
@@ -196,30 +205,34 @@
         align-items: flex-start;
     }
 
-    #idea .card img {
+    .card img {
         margin: 0;
     }
 
-    #idea .card-body {
+    .card-body {
         text-align: justify;
     }
 
-    #idea .card-body h4 {
+    .card-body h4 {
         margin: 0 0 7px;
     }
+
+    /* card */
 }
 
+/* card */
+
 @media (min-width: 320px) and (max-width: 620px) {
-    #idea .card {
+    .card {
         width: calc(100% - 30px);
         padding: 26px 30px 39px 26px;
     }
 
-    #idea .card img {
+    .card img {
         width: 43px;
     }
 
-    #idea .card-body h4 {
+    .card-body h4 {
         font-family: var(--font-family);
         font-weight: 600;
         font-size: 14px;
@@ -227,7 +240,7 @@
         color: #353535;
     }
 
-    #idea .card-body p {
+    .card-body p {
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 12px;
@@ -235,6 +248,8 @@
         color: #7a7a7a;
     }
 }
+
+/* card */
 
 /* Idea Section */
 
@@ -367,3 +382,450 @@
 }
 
 /* Help Section */
+
+/* Experience Section */
+
+@media (max-width: 991px) {
+    #experience {
+        margin: 64px auto;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    #experience h1 {
+        margin-bottom: 50px;
+    }
+
+    #experience .duration {
+        border-right: none;
+        padding: 0 0 25px;
+    }
+
+    #experience .row {
+        padding-right: 15px;
+    }
+
+    #experience .timeline {
+        border-left: 2px dashed #7a7a7a;
+        margin-left: 18px;
+
+        .col-lg-3 {
+            padding-top: 15px;
+            padding-left: 35px;
+        }
+
+        .col-lg-8 {
+            padding-left: 35px;
+            padding-right: 0;
+            padding-bottom: 45px;
+        }
+    }
+
+    #experience .duration::before {
+        left: -11px;
+    }
+
+    #experience .duration::after {
+        left: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    #experience h1 {
+        font-size: 24px;
+    }
+
+    #experience h3 {
+        font-size: 18px;
+    }
+
+    #experience p {
+        font-size: 14px;
+    }
+}
+
+/* Experience Section */
+
+/* Expert Section */
+
+@media (max-width: 991px) {
+    #expert {
+        margin: 68px auto;
+    }
+
+    #expert .row {
+        gap: 48px;
+    }
+
+    #expert .col-lg-7 {
+        .p1 {
+            margin: 26px 0 17px;
+        }
+
+        .p2 {
+            margin: 17px 0 26px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    #expert .col-lg-7 {
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        a {
+            font-size: 12px;
+        }
+    }
+
+    #expert .btn1,
+    #expert .btn2 {
+        font-size: 16px;
+    }
+
+    .skill .topic {
+        h5 {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .skill .percent {
+        span {
+            top: -34px;
+        }
+    }
+
+    .skill .percent::before {
+        width: 342px;
+    }
+
+    .skill .percent::before,
+    .skill .percent::after {
+        height: 4px;
+    }
+
+    .skill .figma {
+        span {
+            left: 272px;
+        }
+
+        .percent::after {
+            width: 309px;
+        }
+    }
+
+    .skill .ps {
+        span {
+            left: 247px;
+        }
+
+        .percent::after {
+            width: 284px;
+        }
+    }
+
+    .skill .xd {
+        span {
+            left: 261px;
+        }
+
+        .percent::after {
+            width: 298px;
+        }
+    }
+
+    .skill .ai {
+        span {
+            left: 216px;
+        }
+
+        .percent::after {
+            width: 253px;
+        }
+    }
+}
+
+/* Expert Section */
+
+/* Service Section */
+
+@media (max-width: 991px) {
+    #service {
+        margin: 99px auto 0;
+        padding: 40px 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    #service .heading {
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+            text-align: justify !important;
+            margin: 12px auto 45px;
+            white-space: normal;
+        }
+    }
+}
+
+/* Service Section */
+
+/* Feedback Section */
+
+@media (max-width: 991px) {
+    #feedback {
+        padding: 45px 0;
+    }
+
+    #feedback .heading {
+        p {
+            margin: 12px 0 32px;
+        }
+    }
+
+    #feedback .col-lg-5 {
+        text-align: justify;
+
+        img {
+            width: 256px;
+        }
+    }
+
+    #feedback .col-lg-6 {
+        p {
+            margin-top: 19px;
+            margin-bottom: 14px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    #feedback .heading {
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+            white-space: normal;
+        }
+    }
+
+    #feedback .col-lg-5 {
+        img {
+            width: 256px;
+        }
+    }
+
+    #feedback .col-lg-6 {
+        p {
+            font-size: 15px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+        h6 {
+            font-size: 14px;
+        }
+    }
+}
+
+/* Feedback Section */
+
+/* Blog Section */
+
+@media (max-width: 991px) {
+    #blog {
+        margin: 48px auto 88px;
+    }
+
+    #blog h1 {
+        margin-bottom: 31px;
+        text-align: left;
+    }
+
+    #blog .row .col {
+        padding: 14px 0 !important;
+    }
+
+    #blog .col:last-child .box img,
+    #blog .col:nth-child(2) .box img {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    #blog h1 {
+        font-size: 24px;
+    }
+
+    #blog .col .box {
+        gap: 18px;
+    }
+
+    #blog .box img {
+        width: 163px;
+        margin-left: auto !important;
+    }
+
+    #blog .box-body {
+        margin-right: auto !important;
+
+        #date,
+        #name {
+            font-size: 12px;
+        }
+
+        h4,
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+/* Blog Section */
+
+/* Subs Section */
+
+@media (max-width: 991px) {
+    #subscribe {
+        margin: 89px auto 59px;
+    }
+
+    #subscribe .row {
+        padding: 32px 28px 42px;
+        gap: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    #subscribe h2 {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 200%;
+        color: #353535;
+    }
+
+    #subscribe h3 {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 180%;
+        color: #353535;
+    }
+
+    #subscribe input {
+        padding: 12px 0 12px 20px;
+        border-radius: 12px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 200%;
+        color: #7a7a7a;
+    }
+
+    #subscribe input::placeholder {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 200%;
+        color: #7a7a7a;
+    }
+
+    #subscribe label button {
+        border-radius: 0 12px 12px 0;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 13px;
+        padding: 12px 8px;
+    }
+}
+
+/* Subs Section */
+
+/* Footer */
+
+@media (max-width: 991px) {
+    footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    footer h1 {
+        margin-top: 24px;
+    }
+
+    footer .row:first-child a {
+        margin-top: 30px;
+    }
+
+    footer .row:last-child {
+        margin-top: 40px;
+        gap: 24px;
+
+        .d-inline-block {
+            width: fit-content;
+        }
+    }
+
+    footer .row:last-child div:nth-child(2) {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    footer h1 {
+        font-size: 20px;
+    }
+
+    footer .row:first-child {
+        .img-fluid {
+            width: 114px;
+            height: 35px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    footer h5 {
+        font-size: 14px;
+
+        span {
+            font-size: 16px;
+        }
+    }
+
+    footer .row:last-child {
+        div {
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        img {
+            width: 30px;
+        }
+    }
+}
+
+/* Footer */
